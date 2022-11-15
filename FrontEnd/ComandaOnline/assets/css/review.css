@@ -1,0 +1,61 @@
+body{
+     background-color: #FFF9C4;
+}
+
+
+.fila{
+     
+     padding: 0.4em;
+}
+.logo{
+     width: 70%;
+}
+.redes-sociales{
+     display: flex;
+     justify-content: space-around;
+     padding-top: 2rem;
+}
+.redes-sociales a{
+   width: fit-content;
+   color: #212121;
+}
+
+.mesa-nro{
+     font-weight: bold;
+     font-size: 6.5vmin;
+     margin: 0;
+     padding-bottom: 1rem;
+}
+
+.btn-color-primary{
+     background-color: #FFA000;
+     color: #212121;
+     border-color: #FFA000;
+}
+
+
+.btn-color-primary:hover{
+     color: #757575;
+     background-color: #FFA000;border-color: #FFA000;
+}
+
+.btn-color-secondary{
+    
+     color: #212121;
+     
+}
+
+.no-selected{
+     color: #212121;
+}
+
+
+.no-selected:hover{
+     color: #FFA000;
+}
+
+
+
+.selected{
+     color: #FFA000;
+}

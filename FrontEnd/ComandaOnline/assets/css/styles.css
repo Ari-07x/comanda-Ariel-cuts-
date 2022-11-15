@@ -1,0 +1,100 @@
+
+.bc-fondo{
+  height: 176px;                           
+  background-color:#FFF9C4;
+  font-family: sans-serif;
+}
+
+.logo-Comanda{
+  width: 35%;
+}
+
+.mesa_libre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #0be441;
+  color: black
+}
+
+.mesa_ocupada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  width: 100px; 
+  height: 100px; 
+  border: 3px solid #555;
+  background: #cf1212;
+  color: black;
+}
+
+
+
+.container-imag{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.content-imag{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-family: system-ui;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.nav_comanda{
+  font-size: 1.5rem;
+    color: #000!important;
+    background: var(--darkPrimaryColor);
+    margin: 0px;
+}
+
+.nav_comanda:hover{
+    color: rgb(107, 106, 106)!important;
+    font-weight: bold;
+    background: var(--ligthPrimaryColor);
+    margin: 0px;
+}
+.card-title,
+.card-text {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.5em;
+
+}
+
+
+
+
+
+@media (min-width:1200px) {
+  .fs-4 {
+    font-size: 24px!important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-item > p h5 {
+    display: block;
+    font-size: 1.5em;
+  }
+}

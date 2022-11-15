@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-pedido.css">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title> Pedidos</title>
+
+</head>
+<body>
+   
+ <section class="container-pedidos">
+  <nav class="nav-top">
+ <a href="review.html"><i class="fas fa-arrow-left"></i> Atras</a>
+<!-- Button trigger modal -->
+<a type="button" class="a-two" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fas fa-clipboard-list"></i> Ver Pedido
+</a>
+
+
+  </nav>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade" id="pills-desayuno" role="tabpanel" aria-labelledby="pills-desayuno-tab"><h1>Desayuno y Merienda</h1></div>
+    <div class="tab-pane fade" id="pills-almuerzo" role="tabpanel" aria-labelledby="pills-almuerzo-tab"><h1>Almuerzo y Cena</h1></div>
+    <div class="tab-pane fade show active" id="pills-promo" role="tabpanel" aria-labelledby="pills-promo-tab"><h1>Promociones</h1>
+    <p>1 caffe + 2 medialunas $0.00 <select class=" col-md-2" aria-label="Default select example">
+      <option selected>Seleccionar</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select> <button class="btn-agregar" id="agregar">Agregar</button> </p>
+    <p>2 tostados + 1 liquado $ 0.00 <select class=" col-md-2" aria-label="Default select example" id="cant">
+      <option selected>Seleccionar</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select> <button class="btn-agregar" id="agregar">Agregar</button></p>
+    <p>1 raviol + 1 coca de 1,5 $0.00 <select class=" col-md-2" aria-label="Default select example">
+      <option selected>Seleccionar</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select> <button class="btn-agregar" id="agregar">Agregar</button></p>
+    
+    </div>
+    <div class="tab-pane fade" id="pills-bebidas" role="tabpanel" aria-labelledby="pills-bebidas-tab"><h1>Bebidas</h1></div>
+    <div class="tab-pane fade" id="pills-postres" role="tabpanel" aria-labelledby="pills-postres-tab"><h1>Postres</h1></div>
+  </div>
+
+  <ul class="nav nav-pills mb-10 col-12" id="pills-tab" role="tablist">
+   
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-desayuno-tab" data-bs-toggle="pill" data-bs-target="#pills-desayuno" type="button" role="tab" aria-controls="pills-desayuno" aria-selected="false"><i class="fas fa-mug-hot"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-almuerzo-tab" data-bs-toggle="pill" data-bs-target="#pills-almuerzo" type="button" role="tab" aria-controls="pills-almuerzo" aria-selected="false"><i class="fas fa-pizza-slice"></i></button>
+    </li>
+    
+    <li class="nav-item " role="presentation">
+      <button class="nav-link active" id="pills-promo-tab" data-bs-toggle="pill" data-bs-target="#pills-promo" type="button" role="tab" aria-controls="pills-promo" aria-selected="true"><i class="fas fa-hand-holding-usd"></i></button>
+    </li>
+   
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-bebidas-tab" data-bs-toggle="pill" data-bs-target="#pills-bebidas" type="button" role="tab" aria-controls="pills-bebidas" aria-selected="false"><i class="fas fa-wine-bottle"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-postres-tab" data-bs-toggle="pill" data-bs-target="#pills-postres" type="button" role="tab" aria-controls="pills-postres" aria-selected="false"><i class="fas fa-ice-cream"></i></button>
+    </li>
+  </ul>
+ 
+
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Pedidos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table id="tbventas" class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Importe</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tbody-tabla">
+        <!-- faltaria un evento con jquery para que pase los datos obtenidos de la base de datos al modal-->
+        </tbody>
+    </table>
+     
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-pedidos {
+  background-color: #FFF9C4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.container-pedidos .nav-top {
+  background: orange;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  color: #FFF9C4;
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.container-pedidos .nav-top a {
+  margin: 0 0 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #FFF9C4;
+  width: 85px;
+  border-radius: 30px;
+  text-align: center;
+  color: #000;
+}
+.container-pedidos .nav-top .a-two {
+  width: 130px;
+}
+.container-pedidos .nav-top a:hover {
+  background: #FFF9C4;
+  color: #000;
+}
+
+.modal {
+  z-index: 1000000 !important;
+}
+
+.tab-pane h1 {
+  color: orange;
+}
+.tab-pane p {
+  color: #000;
+}
+.tab-pane p select {
+  background: none;
+  border: 2px solid orange;
+  color: #000;
+  padding: 7px;
+  margin-left: 5px;
+  outline: none;
+}
+.tab-pane p select option {
+  color: #000;
+}
+.tab-pane p .btn-agregar {
+  background: none;
+  border: none;
+  border: 2px solid orange;
+  padding: 5px;
+  margin-left: 10px;
+  color: #000;
+}
+.tab-pane p .btn-agregar:hover {
+  background: orange;
+}
+
+.nav {
+  height: 10%;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orange;
+  border-top: 2px solid #FFF9C4;
+}
+.nav li i {
+  color: #000;
+  font-size: 30px;
+}
+.nav li .active {
+  background: none !important;
+  outline: none;
+  border: none;
+  border: 2px solid #FFF9C4;
+}/*# sourceMappingURL=style-pedido.css.map */
